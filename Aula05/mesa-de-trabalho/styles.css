@@ -85,7 +85,7 @@ input{
   position: relative;
 }
 
-input:checked {
+input:checked{
   background-color: black;
 }
 
@@ -101,10 +101,11 @@ input:before {
   transform: scale(1.1);
   top: 0;
   left: 0;
+  transition: .4s;
 }
 
-input:before :checked{
-  left: 100px;
+input:checked:before{
+  left: 30px;
 }
 
 
